@@ -21,7 +21,7 @@ export default {
 }
 
 body {
-  background-color: #fef1e6;
+  background-color: #334756;
 }
 
 #app {
@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #E8E8E8;
   padding: 100px 200px;
 }
 </style>

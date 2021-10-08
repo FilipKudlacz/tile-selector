@@ -1,6 +1,8 @@
 <template>
   <div class="card-wrapper">
-    <slot>Title</slot>
+    <p>
+      <slot>Title</slot>
+    </p>
   </div>
 </template>
 
@@ -18,9 +20,17 @@ export default {
   font-weight: bold;
   min-height: 100px;
   min-width: 300px;
-  background-color: #ffb085;
+  max-width: 450px;
+  background-color: #334756;
   border-radius: 20px;
+  padding: 20px;
   justify-self: center;
-  box-shadow: 8px 8px 2px 0px rgba(66, 68, 90, 1);
+  user-select: none;
+
+  p {
+    margin: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
 }
 </style>

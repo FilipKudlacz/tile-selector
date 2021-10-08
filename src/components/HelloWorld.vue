@@ -2,11 +2,11 @@
   <div class="outer-component-wrapper">
     <h1>Zadanie rekrutacyjne Filip Kudliński</h1>
     <h3>
-      Kliknij kafelek by go zaznaczyć. Po lewej stronie niebieskiego pola możesz
-      edytować tytuł wybranego kafelka.
+      Kliknij kafelek by go zaznaczyć. Po lewej stronie pomarańczowego pola
+      możesz edytować tytuł zaznaczonego kafelka.
     </h3>
     <h3>
-      Po prawej stronie niebieskiego pola znajduje się przycisk służący do
+      Po prawej stronie pomarańczowego pola znajduje się przycisk służący do
       mieszania kolejności kafelków. Miłej zabawy! ;)
     </h3>
     <div class="nav">
@@ -120,28 +120,30 @@ export default {
   .nav {
     display: flex;
     width: 100%;
-    background-color: #90aacb;
+    background-color: #F0A500;
     height: 80px;
     border-radius: 20px 20px 0 0;
     padding: 0 150px;
     margin-top: 100px;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 8px 8px 11px 0px rgba(66, 68, 90, 1);
 
     .shuffle {
       height: 40px;
       border-radius: 20px;
       font-size: 20px;
       padding: 0 20px;
-      background-color: #fef1e6;
+      background-color: #E8E8E8;
+      color: #334756;
+      font-weight: bold;
     }
 
     input {
       height: 40px;
       font-size: 20px;
       border-radius: 20px;
-      padding-left: 10px;
+      padding-left: 20px;
+      background-color: #E8E8E8;
     }
   }
 
@@ -151,14 +153,15 @@ export default {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto auto;
     column-gap: 20px;
-    row-gap: 20px;
+    row-gap: 40px;
     padding: 50px;
-    background-color: #f9d5a7;
-    box-shadow: 8px 8px 11px 0px rgba(66, 68, 90, 1);
+    background-color: #E8E8E8;
 
     .selected {
-      border: 3px solid black;
+      border: 3px solid #E8E8E8;
       box-shadow: none;
+      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
     }
   }
 }
