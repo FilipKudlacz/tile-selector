@@ -1,8 +1,6 @@
 <template>
   <div class="card-wrapper">
-    <p>
-      <slot>Title</slot>
-    </p>
+    <slot>Title</slot>
   </div>
 </template>
 
@@ -26,11 +24,6 @@ export default {
   padding: 20px;
   justify-self: center;
   user-select: none;
-
-  p {
-    margin: 0;
-    overflow: hidden;
-    max-width: 100%;
-  }
+  overflow: hidden;
 }
 </style>
